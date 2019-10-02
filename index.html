@@ -1,9 +1,96 @@
 <html>
+	<head>
+		<title>Roshu App</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 <body>
 
-	<h1>this is my file</h1>
+	<h1>This is my Login Form</h1>
 
-	Login form
+	<h2>Login Form</h2>
+	<form action="#" method="post" enctype="text/plain">
+        <fieldset>
+            <legend><b>Applicant's Details</b></legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="first_name">First Name</label>
+                    </td>
+                    <td>
+                        <input id="container" type="text" name="first_name" maxlength="20" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="last_name">Last Name</label>
+
+                    </td>
+                    <td>
+                        <input id="container" type="text" name="last_name" maxlength="20" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email Address</label>
+                    </td>
+                    <td>
+                        <input id="container" type="email" name="email" maxlength="40" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">Password</label>
+                    </td>
+                    <td>
+                        <input id="container" type="password" name="pwd" maxlength="30" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        Gender
+                        <select id="gender" value="select" name="gender">
+<option Name="gender" value="Male"/>Male<br>
+<option Name="gender" value="Female"/>Female<br>
+<option Name="gender" value="Other"/>Other<br>
+</select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Your Qualification</b></legend>
+            <input id="qualification" type="radio" Name="qualification" value="Primary" />Primary<br>
+            <input id="qualification" type="radio" Name="qualification" value="Middle" />Middle<br>
+            <input id="qualification" type="radio" Name="qualification" value="Matric" />Matric/O-Level<br>
+            <input id="qualification" type="radio" Name="qualification" value="Intermediate" />Intermediate/A-Level<br>
+            <input id="qualification" type="radio" Name="qualification" value="B.A" />B.A/BS/B.Sc<br>
+            <input id="qualification" type="radio" Name="qualification" value="M.A" />M.A/M.Sc/MS<br>
+            <input id="qualification" type="radio" Name="qualification" value="Ph.D" />Ph.D/Masters<br>
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Check the languages you have learnt yet</b></legend>
+            <input type="checkbox" name="language" value="English">English<br>
+            <input type="checkbox" name="language" value="Arabic">Arabic<br>
+            <input type="checkbox" name="language" value="French">French<br>
+            <input type="checkbox" name="language" value="Spanish">Spanish<br>
+            <input type="checkbox" name="language" value="Latin">Latin<br>
+            <input type="checkbox" name="language" value="Greek">Greek<br>
+
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Your Favourite Programming Language</b></legend>
+            <input type="checkbox" name="language" value="C++">C++<br>
+            <input type="checkbox" name="language" value="C#">C#<br>
+            <input type="checkbox" name="language" value="Python">Python<br>
+            <input type="checkbox" name="language" value="JavaScript">JavaScript<br>
+            <input type="checkbox" name="language" value="Java">Java<br>
+            <input type="checkbox" name="language" value="PHP">PHP<br>
+        </fieldset><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset"><br>
+
+    </form>
 
 </body>
 </html>
